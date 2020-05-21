@@ -1,5 +1,5 @@
-import { Head } from 'https://cdn.jsdelivr.net/tuukkahu/tuukkahu.github.io/modules/head.js';
-import { Body, Apple } from 'https://cdn.jsdelivr.net/tuukkahu/tuukkahu.github.io/modules/body.js';
+import { Head } from 'https://tuukkahu.github.io/tuukkahu.github.io/modules/head.js';
+import { Body, Apple } from 'https://tuukkahu.github.io/tuukkahu.github.io/modules/body.js';
 
 const BLOCKWIDTH = 28;
 const SIZE = 20;
