@@ -1,5 +1,5 @@
-import { Head } from 'modules/head.js';
-import { Body, Apple } from 'modules/body.js';
+import { Head } from 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/head.js';
+import { Body, Apple } from 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/body.js';
 
 const BLOCKWIDTH = 28;
 const SIZE = 20;
@@ -24,7 +24,7 @@ function drawBackground() {
     for (let i = 0; i < SIZE; i++) {
         for (let j = 0; j < SIZE; j++) {
             let bgimage = new Image(width, height);
-            bgimage.src = 'modules/bg.png';
+            bgimage.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/bg.png';
             bgimage.onload = function() {
                 ctx.drawImage(bgimage, i*(BLOCKWIDTH+2), j*(BLOCKWIDTH+2), BLOCKWIDTH+2, BLOCKWIDTH+2);
             };
@@ -103,7 +103,7 @@ function levelOne() {
     let j = 5;
     for (let i = 5; i <= 10; i++) {
         fencepart = new Body(i*(BLOCKWIDTH+2), j*(BLOCKWIDTH+2), BLOCKWIDTH);
-        fencepart.bodyimg = 'modules/fence.png';
+        fencepart.bodyimg = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/fence.png';
         fencepart.draw();
         fence.push(fencepart);
     }
@@ -175,7 +175,7 @@ async function main(level=1) {
             }
             points = addPoint(points);
             body.push(bodypart);
-            bodypart.bodyimg = 'modules/body.png';
+            bodypart.bodyimg = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/body.png';
             bodypart.draw();
         } else if (to_do === 2) {
             game_over = true;

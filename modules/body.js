@@ -33,7 +33,7 @@ class Body {
         let awidth = this._width;
         if (newimg == false) {
             this._bodyimg = new Image();
-            this._bodyimg.src = 'modules/body.png';
+            this._bodyimg.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/body.png';
         }
         let ax = this._x;
         let ay = this._y;
@@ -49,7 +49,7 @@ class Body {
 
         let awidth = this._width;
         let bgimage = new Image();
-        bgimage.src = 'modules/bg.png';
+        bgimage.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/bg.png';
         let ax = this._x;
         let ay = this._y;
         bgimage.onload = function() {
@@ -72,7 +72,7 @@ class Apple extends Body {
         const canvas = document.querySelector('.background');
         const ctx = canvas.getContext('2d');
         let appleimage = new Image();
-        appleimage.src = 'modules/apple.png';
+        appleimage.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/apple.png';
         var ax = this._x;
         var ay = this._y;
         var aoffset = this._offset;

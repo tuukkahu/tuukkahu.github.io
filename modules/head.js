@@ -18,7 +18,7 @@ class Head {
         const ctx = canvas.getContext('2d');
         let awidth = this._width;
         let headimg = new Image();
-        headimg.src = 'modules/head.png';
+        headimg.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/head.png';
         let ax = this._x;
         let ay = this._y;
         headimg.onload = function() {
@@ -33,7 +33,7 @@ class Head {
         if (body.length == 0) {
             let awidth = this._width;
             let bgimage = new Image();
-            bgimage.src = 'modules/bg.png';
+            bgimage.src = 'https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/modules/bg.png';
             let ax = this._x;
             let ay = this._y;
             bgimage.onload = function() {
