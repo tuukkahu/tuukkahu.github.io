@@ -1,43 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>Snake</title>
-        <link rel="stylesheet" href="snakestyle.css">
-        <ul>
-            <li><a href="https://www.google.com">Google</a></li>
-            <li><a class="active" href="page.html">Snake</a></li>
-            <li><a href="https://github.com/tuukkahu">Github</a></li>
-        </ul>
-    </head>
-    
-    <body>
-        <div class="snake">
-            <header>
-                <h1>Snake</h1>
-            </header>
-            <canvas class="background">
-                <p>Your browser does not support canvas. Please try again with a different browser.</p>
-            </canvas>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake 2.0</title>
+    <script src="https://tuukkahu.github.io/tuukkahu.github.io/app.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="style.css">
+    <ul>
+        <li><a href="https://www.google.com">Google</a></li>
+        <li><a class="active" href="page.html">Snake</a></li>
+        <li><a href="https://github.com/tuukkahu">Github</a></li>
+        <li><a href="/tetris.html">Tetris</a></li>
+    </ul>
+</head>
 
-            <script type="module" src="https://tuukkahu.github.io/tuukkahu.github.io/snake.js"></script>
-            
-            <div class="relative">
+<body>
+    <header>
+    </header>
+    <div class="game">
+        <div class="side_content">
+            <div class="points">
                 <h1>Points:</h1>
                 <h1 id="points_number">0</h1>
-                <br>
-                <h1>Select Level:</h1>
-                <button id="button1">Level 1</button>
             </div>
-            
-            <div class="instructions">
-                <h1>Instructions:</h1>
-                Use W, A, S, D to move. Eat apples to grow.<br>
-                Press R to reload the page, Q to quit.<br>
-                Don't eat yourself.
+            <div class="buttons">
+                <div class="button">
+                    <button id="freebutton">Reset</button>
+                </div>
             </div>
         </div>
-    </body>
-    <footer>
-    </footer>
+    </div>
+    
+    
+</body>
 </html>
