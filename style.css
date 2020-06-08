@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/bodybg.png");
+    background-repeat: repeat;
+}
+
+header {
+    color: white;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.game {
+    margin-top: 50px;
+    width: 89%;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+}
+
+.side_content {
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-style: solid;
+    border-color: yellow;
+    border-width: 2px;
+    height: 20vh;
+    width: 15vh;
+    background-color: darkolivegreen;
+    float: left;
+}
+
+.points {
+    width: 14.8vh;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    float: left;
+    color: white;
+    border-color: yellow;
+    border-bottom-style: solid;
+    border-width: 2px;
+}
+
+#points_number {
+    margin-left: 6px;
+}
+
+#freebutton {
+    margin: 5px;
+    margin-top: 10px;
+    height: 20px;
+    width: 80px;
+}
+
+.grid {
+    width: 630px;
+    height: 630px;
+    border-radius: 5px;
+    display: flex;
+    float: left;
+    flex-wrap: wrap;
+}
+
+.grid div {
+    height: 30px;
+    width: 30px;
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/bg.png");
+}
+
+.grid div.apple {
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/apple.png");
+}
+
+.grid div.head {
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/head.png");
+}
+
+.grid div.body {
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/body.png");
+}
+
+.grid div.fence {
+    background-image: url("https://raw.githubusercontent.com/tuukkahu/tuukkahu.github.io/master/fence.png");
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: darkolivegreen;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: gray;
+}
+
+.active {
+    background-color: #333;
+}
