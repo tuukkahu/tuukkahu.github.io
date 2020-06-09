@@ -3,16 +3,16 @@ BLOCK_AMOUNT = 441;
 document.addEventListener('DOMContentLoaded', (e) => {
     createBackground();
 
-    const GRID = document.querySelector('.grid');
-    const freeBtn = document.querySelector('#freebutton')
+    const freeBtn = document.querySelector('#freebutton');
+    const oneBtn = document.querySelector('#onebutton');
     let blocks = Array.from(document.querySelectorAll('.grid div'));
 
     document.addEventListener('keydown', setDir);
     freeBtn.addEventListener('click', clear);
+    oneBtn.addEventListener('click', levelOne);
 
     const WIDTH = 21;
     let timerId;
-    let game_over = false;
     let score = 0;
     let dir = 0;
     let appleIndex;
@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', (e) => {
         if (bodyIndexes !== []) {
             bodyIndexes.forEach(index => {
                 blocks[index].classList.add('body');
+            });
+        }
+        if (fence !== []) {
+            fence.forEach(index => {
+                blocks[index].classList.add('fence');
             });
         }
     }
@@ -105,9 +110,10 @@ document.addEventListener('DOMContentLoaded', (e) => {
             headIndex -= BLOCK_AMOUNT;
         } 
 
-        if (bodyIndexes.includes(headIndex)) {
+        if (bodyIndexes.includes(headIndex) || fence.includes(headIndex)) {
             gameOver();
         }
+
         document.getElementById("points_number").innerHTML = score;
         draw();
     }
@@ -135,8 +141,30 @@ document.addEventListener('DOMContentLoaded', (e) => {
         dir = 0;
         game_over = false;
         moveBlockers = [false, false, false, false];
+        if (timerId === null) {
+            timerId = setInterval(move, 80);
+        }
         draw();
     }
+
+    function levelOne() {
+        clear();
+        let i = WIDTH*6 + 7;
+        for (let j=0; j < 7; j++) {
+            fence.push(i);
+            i++;
+        }
+
+        i = WIDTH*14 + 7;
+        for (let j=0; j < 7; j++) {
+            fence.push(i);
+            i++;
+        }
+
+        draw();
+    }
+
+
 });
 
 // Functions

@@ -59,8 +59,8 @@ header {
     margin-left: 6px;
 }
 
-#freebutton {
-    margin: 5px;
+button {
+    margin-left: 25%;
     margin-top: 10px;
     height: 20px;
     width: 80px;
